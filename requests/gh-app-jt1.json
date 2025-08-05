@@ -1,0 +1,9 @@
+{
+    "name": "gh-app-jt1",
+    "org": "example-org",
+    "permissions": {
+        "contents": "read",
+        "issues": "read"
+    },
+    "issue": "https://github.com/example-org/apps/issues/1"
+}

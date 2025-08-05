@@ -1,0 +1,10 @@
+{
+    "name": "gh-app-jt2",
+    "org": "example-org",
+    "permissions": {
+        "contents": "write",
+        "issues": "write",
+        "checks": "write"
+    },
+    "issue": "https://github.com/example-org/apps/issues/2"
+}
