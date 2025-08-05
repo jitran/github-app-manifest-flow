@@ -21,6 +21,7 @@ sequenceDiagram
     GitHub->>Server: Return temporary code
     Server->>GitHub: Retrieve app credentials using code
     Server->>Secure Storage: Store app credentails
+    Support Engineer->>Server: Assigns requestor as the GitHub App Manager for the app
     Server->>GitHub: Mark issue as closed
 ```
 

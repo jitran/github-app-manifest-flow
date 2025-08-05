@@ -27,18 +27,20 @@ def index():
                 }
                 org = data["org"]
                 issue = data["issue"]
+                requestor = data["requestor"]
                 content += render_template_string("""
                     <h2>Register {{ name }}</h2>
                     <ul>
                         <li>Organisation: {{ org }}</li>
                         <li>Permissions: {{ manifest.default_permissions | tojson }}</li>
                         <li>Issue: <a href="{{ issue }}">{{ issue }}</a></li>
+                        <li>Requestor: {{ requestor }}</li>
                     </ul>
                     <form action="https://github.com/organizations/{{ org }}/settings/apps/new" method="POST">
                         <input type="hidden" name="manifest" value='{{ manifest|tojson }}'>
                         <button type="submit">Register GitHub App</button>
                     </form>
-                    """, manifest=manifest, name=manifest["name"], org=org, issue=issue)
+                    """, manifest=manifest, name=manifest["name"], org=org, issue=issue, requestor=requestor)
             except Exception:
                 continue
     return content

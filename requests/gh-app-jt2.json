@@ -6,5 +6,6 @@
         "issues": "write",
         "checks": "write"
     },
-    "issue": "https://github.com/example-org/apps/issues/2"
+    "issue": "https://github.com/example-org/apps/issues/2",
+    "requestor": "user2@example.com"
 }

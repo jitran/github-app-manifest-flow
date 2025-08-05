@@ -5,5 +5,6 @@
         "contents": "read",
         "issues": "read"
     },
-    "issue": "https://github.com/example-org/apps/issues/1"
+    "issue": "https://github.com/example-org/apps/issues/1",
+    "requestor": "user1@example.com"
 }
