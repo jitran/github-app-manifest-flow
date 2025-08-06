@@ -11,7 +11,7 @@ sequenceDiagram
     participant Requestor
     participant GitHub
     participant Server
-    participant Secure Storage
+    participant Secure Vault
     participant Support Engineer
 
     Requestor->>GitHub: Submit issue with app details
@@ -20,7 +20,7 @@ sequenceDiagram
     Server->>GitHub: Register GitHub App with manifest
     GitHub->>Server: Return temporary code
     Server->>GitHub: Retrieve app credentials using code
-    Server->>Secure Storage: Store app credentails
+    Server->>Secure Vault: Store app credentials
     Support Engineer->>Server: Assigns requestor as the GitHub App Manager for the app
     Server->>GitHub: Mark issue as closed
 ```
